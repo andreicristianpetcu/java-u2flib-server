@@ -21,7 +21,7 @@ public class RandomChallengeGenerator implements ChallengeGenerator {
         byte[] randomBytes = new byte[32];
         random.nextBytes(randomBytes);
         byte[] hexBytes = hexToBytes("a90731aaaaaaaaaaaaaaaaaaaaaaaaaa");
-//        System.arraycopy(hexBytes, 0, randomBytes, 0, 16);
+        System.arraycopy(hexBytes, 0, randomBytes, 0, 16);
 //        System.out.println("------------" + randomBytes);
 //        System.out.println("------------" + new String(randomBytes));
 //        System.out.println("------------" + randomBytes.length);
